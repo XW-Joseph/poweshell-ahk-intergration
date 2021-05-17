@@ -12,6 +12,8 @@ Import-csv .\Testdata_A_B_FindMe.csv | Select "DATAD", "FindMe" |
   $numbertotry = Read-Host "enter number to try, or 0 to continue"
   if( $numbertotry -ne 0){
     .\masgbox.ahk $numbertotry $currID #https://autohotkey.com/board/topic/3397-how-to-pass-arguments-to-a-script/
+    #wait for script in case if errors
+  $response = Read-Host "awaiting Ok from script"
     
 }
   #$_.ID | out-host
